@@ -88,6 +88,18 @@ function katt(szin) {
        
     }
 }
+document.getElementById("undoButton").addEventListener("click", function () {
+    if (korIdx > 0) {
+        korIdx--;
+        korok[korIdx].style.backgroundColor = "";
+        valasztottSzinek.pop();
+    }
+});
+
+document.getElementById("scoreButton").addEventListener("click", function () {
+    console.log("vmi");
+
+});
 document.getElementById("exitButton").addEventListener("click", function() {
     if (confirm("Biztosan ki akarsz lépni a játékból?")) {
         window.close(); 
